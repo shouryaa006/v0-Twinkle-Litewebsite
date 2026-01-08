@@ -1,43 +1,23 @@
-import Hero from "@/components/Hero";
-import Categories from "@/components/Categories";
-import About from "@/components/About";
-import Projects from "@/components/Projects";
-import Products from "@/components/Products";
-import Downloads from "@/components/Downloads";
-import Contact from "@/components/Contact";
+import Header from "@/components/header"
+import HeroSlider from "@/components/hero-slider"
+import ProductCategories from "@/components/product-categories"
+import AboutSection from "@/components/about-section"
+import ProjectsSection from "@/components/projects-section"
+import ProductsSection from "@/components/products-section"
+import DownloadsSection from "@/components/downloads-section"
+import ContactSection from "@/components/contact-section"
 
 export default function Home() {
   return (
-    <main className="w-full flex flex-col">
-
-      <section className="w-full">
-        <Hero />
-      </section>
-
-      <section className="w-full">
-        <Categories />
-      </section>
-
-      <section className="w-full">
-        <About />
-      </section>
-
-      <section className="w-full">
-        <Projects />
-      </section>
-
-      <section className="w-full">
-        <Products />
-      </section>
-
-      <section className="w-full">
-        <Downloads />
-      </section>
-
-      <section className="w-full">
-        <Contact />
-      </section>
-
+    <main className="w-full">
+      <Header />
+      <HeroSlider />
+      <ProductCategories />
+      <AboutSection />
+      <ProjectsSection />
+      <ProductsSection />
+      <DownloadsSection />
+      <ContactSection />
     </main>
-  );
+  )
 }
